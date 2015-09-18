@@ -9,6 +9,7 @@
 ##new
  - 新たな議題を作れる
  - twitterやfacebookに流せる
+
 ###議題
  - 議題名
  - 議題の詳細
@@ -20,6 +21,7 @@
  - 二択の投票
  - 票の分布
  - twitterやfacebookに流せる
+
 ###コメント欄
  - コメント欄
  - 名前
@@ -54,6 +56,7 @@ git remote add upstream https://github.com/g-hyoga/sprout.git
 ##開発が本格的に始まってから
 
 githubにあるissuesを確認して、自分にassignされているissuesの機能を追加していきましょう。
+tagにhighが付いているものほど優先度が高いです。
 
 まずブランチを切ります。
 
@@ -83,7 +86,10 @@ git push upstream features/???`
 でpushし、pull requestを送っておきましょう。
 mergeは勝手にしないでね。
 
+バグがないと確定したらmergeし、issuesをcloseして、使っていたブランチを消してください
+
 
 これを繰り返し、機能を実装してゆきます。
 
 自分でも何書いてるかわからなくなってきたので、あとは聞いてね。
+取り合えず、ブランチ切ってcommitからのpull requestの流れをやっておくので、参考にしてね
