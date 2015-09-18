@@ -22,6 +22,8 @@ get '/test' do
 end
 
 get '/home' do
+		@topics = Topic.all
+
     erb :home
 end
 
