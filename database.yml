@@ -1,4 +1,4 @@
 development:
   adapter: sqlite3
-  database: subject.db
+  database: sprout.db
 
