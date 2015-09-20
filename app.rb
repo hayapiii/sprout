@@ -7,13 +7,11 @@ require 'open-uri'
 
 require 'json'
 
-=begin
 ActiveRecord::Base.configurations = YAML.load_file('database.yml')
 ActiveRecord::Base.establish_connection('development')
 
-class Memos < ActiveRecord::Base
+class Topic < ActiveRecord::Base
 end
-=end
 
 
 #########################################################################################
@@ -23,6 +21,7 @@ get '/test' do
 end
 
 get '/home' do
+		@topics = Topic.all
     erb :home
 end
 
